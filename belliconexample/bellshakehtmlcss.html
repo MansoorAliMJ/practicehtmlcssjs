@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaking Bell Icon</title>
+    <style>
+      .bell {
+        display: inline-block;
+        width: 50px; /* Set width to match the size of your bell image */
+        height: 50px; /* Set height to match the size of your bell image */
+        background: url("image/bell.png") no-repeat center center;
+        background-size: contain; /* Make sure the image fits within the div */
+      }
+
+      .bell:hover {
+        cursor: pointer;
+        animation: shake 1s ease-in-out; /* Apply shaking animation for 1 second on hover */
+      }
+
+      @keyframes shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+          transform: rotate(-10deg);
+        }
+        20% {
+          transform: rotate(10deg);
+        }
+        30% {
+          transform: rotate(-15deg);
+        }
+        40% {
+          transform: rotate(15deg);
+        }
+        50% {
+          transform: rotate(-20deg);
+        }
+        60% {
+          transform: rotate(20deg);
+        }
+        70% {
+          transform: rotate(-25deg);
+        }
+        80% {
+          transform: rotate(25deg);
+        }
+        90% {
+          transform: rotate(-30deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      .icon-container {
+        margin: 1rem;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icon-container">
+      <div class="bell"></div>
+      <h3>Notifiy me</h3>
+    </div>
+  </body>
+</html>
